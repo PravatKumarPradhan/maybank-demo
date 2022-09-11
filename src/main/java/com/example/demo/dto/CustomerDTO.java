@@ -5,6 +5,8 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Date;
+
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class CustomerDTO {
@@ -12,7 +14,7 @@ public class CustomerDTO {
     String customerFirstName;
     String customerMiddleName;
     String customerLastName;
-    String dob;
+    Date dob;
     String idType;
     String idValue;
     String accountType;
